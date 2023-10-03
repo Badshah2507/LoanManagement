@@ -1,0 +1,128 @@
+.sidebar{
+    width:25%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 2%;
+    background:#f3f3f3;
+    border-radius:10px 0 0 10px;
+}
+.sidebar>div{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: start;
+        height:90%;
+        width:90%
+}
+.profile-box{
+    width:100%;
+    border-radius:3px;
+    padding:8px 10px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align:left;
+    background:white;
+}
+.profile-box svg{
+    background:#50AED3;
+    padding:10px;
+    border-radius:3px;
+    margin-right:10px;
+}
+.sidebar-contents{
+    height:100%;
+    text-align:left;
+    width:100%
+}
+.sidebar-contents p{
+    margin:0;
+    padding:0;
+    font-size:small;
+    color:grey;
+}
+.sidebar-contents div{
+    margin:8% 0;
+}
+.sidebar-contents div div{
+ padding:5px;
+ margin:2% 0;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ border-left:3px solid grey;
+ background:white;
+}
+.sidebar-contents div svg{
+    margin-right:3%;
+}
+.sidebar-contents div a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar-contents div a:hover{
+    color:#055f83;
+}
+.sidebar-contents div div:hover{
+    color:#055f83;
+ border-left:3px solid #055f83;
+}
+.highlight{
+ border-left:3px solid #055f83 !important;
+ color:#055f83 ;
+}
+.highlight a{
+    color:#055f83 !important;
+}
+.hand-icon:hover {
+    cursor: pointer
+}
+.lms-table td, .lms-table th {
+    padding:5px 10px;
+}
+.lms-table div{
+    float:right;
+}
+.lms-table {
+    width: 90%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left:5%;
+}
+.lms-table tr:nth-child(even) {
+    background-color: #ebf4f8;
+}
+.lms-table th{
+    background:#6fbbd9;
+}
+.lms-table td{
+    font-size:small;
+}
+.lms-table span{
+    margin-right:5%;
+    padding:0;
+    text-decoration: underline;
+    color:#055f83;
+}
+@media screen and (max-width: 500px) {
+    .profile-box svg, .sidebar-contents div svg{
+        display:none;
+    }
+    .sidebar{
+            width: 100%;
+    }
+    .sidebar>div{
+        width:auto;
+    }
+    .sidebar-contents{
+        display:flex;
+    }
+    .sidebar-contents div>p{
+        display:none;
+    }
+    .sidebar-contents div div{
+        display:flex;
+    }
+}
+
